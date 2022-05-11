@@ -1,0 +1,98 @@
+#menu,
+#menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    zoom: 1;
+    width: 100%;
+    background-color: rgb(221, 221, 221);
+}
+
+
+#menu li {
+    float: left;
+    position: relative;
+    
+}
+
+#menu a {
+    display: block;
+    padding: 40px 10px;
+    float: left;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font: bold 12px Arial, Helvetica;
+
+}
+
+#menu li:hover> a {
+    border-bottom: 2px solid rgb(255, 0, 0);
+    background-color: rgb(241, 241, 241);
+
+}
+
+#menu ul {
+    margin: 20px 0 0 0;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    z-index: 1;
+    background: rgb(221, 221, 221);
+    border-radius: 3px;
+    transition: all .2s ease-in-out;
+}
+
+#menu li:hover>ul {
+    opacity: 1;
+    visibility: visible;
+    margin: 0;
+}
+
+
+#menu ul ul {
+    top: 0;
+    left: 200px;
+    margin: 0 0 0 20px;
+}
+
+#menu ul li {
+    float: none;
+    display: block;
+    border: 0;
+}
+
+#menu ul a {
+    padding: 10px;
+    width: 200px;
+    white-space: nowrap;
+    display: block;
+    float: none;
+}
+
+#menu ul li:first-child>a {
+    border-radius: 3px 3px 0 0;
+}
+
+#menu:before,
+#menu:after {
+    content: "";
+    display: table;
+}
+
+#menu:after {
+    clear: both;
+}
+
+
+nav{
+    margin-top: 200px;
+}
